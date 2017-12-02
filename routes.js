@@ -2,7 +2,7 @@
 
 // Configuration
 const config = require('./config');
-const API_URL_KEY = config.get('api_key');
+const API_URL_KEY = config.get('api_url_key');
 
 // Controllers
 let UserController = require('./controllers/user.js');
