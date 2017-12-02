@@ -1,0 +1,21 @@
+{
+  "name": "heal-now",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Bhanu",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "4.16.2",
+    "lodash": "4.17.4",
+    "mariasql": "0.2.6",
+    "nconf": "0.9.1"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "port": 8000,
+  "api_url_key": "/api/v1",
+  "db": {
+    "host": "localhost",
+    "user": "letmeknow",
+    "pass": "dontseeme",
+    "db": "nextsteps"
+  }
+}
