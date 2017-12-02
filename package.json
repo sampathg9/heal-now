@@ -13,11 +13,14 @@
   "repository": "https://github.com/sampathkumar0019/heal-now",
   "license": "MIT",
   "dependencies": {
+    "async": "^2.6.0",
     "body-parser": "^1.18.2",
+    "cors": "2.8.4",
     "express": "4.16.2",
     "lodash": "4.17.4",
     "mariasql": "0.2.5",
+    "moment": "^2.19.3",
     "nconf": "0.9.1",
-    "cors": "2.8.4"
+    "uuid": "3.1.0"
   }
 }

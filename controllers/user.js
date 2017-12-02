@@ -15,7 +15,8 @@ UserController.prototype.register = function (req, res) {
 UserController.prototype.login = function (req, res) {
   let options = {
     username: req.body.username,
-    password: req.body.password
+    password: req.body.password,
+    status: 1
   };
   let mUser = new User();
   mUser.login(options, function (err, result) {
