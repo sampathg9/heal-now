@@ -3,6 +3,7 @@
 // Third party modules
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 // Configuration
 const config = require('./config');
@@ -11,6 +12,7 @@ const config = require('./config');
 const app = express();
 
 // Middlewares
+app.use(cors());
 app.use(bodyParser.json());
 
 // Initialize the routes

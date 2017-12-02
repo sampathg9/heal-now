@@ -8,16 +8,15 @@ function User() {
 }
 
 User.prototype.login = function (options, cb) {
-  let query = `SELECT COUNT(*) FROM user_m WHERE email = :email AND password = :password;`;
+  let query = `SELECT COUNT(*) FROM users WHERE email = :username AND password = :password;`;
   this.db.getResult({
     query: query,
-    data: options,
-    cb: function (err, result) {
-      if (err) {
-        return cb(err);
-      }
-      return cb(null, result);
+    data: options
+  }, function (err, result) {
+    if (err) {
+      return cb(err);
     }
+    return cb(null, result);
   });
 };
 

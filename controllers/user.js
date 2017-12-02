@@ -2,9 +2,10 @@
 
 // Internal modules
 let User = require('../models/user.js');
+let Controller = require('../lib/controller.js');
 
 function UserController() {
-  this.mUser = new User();
+  
 }
 
 UserController.prototype.register = function (req, res) {
@@ -16,8 +17,9 @@ UserController.prototype.login = function (req, res) {
     username: req.body.username,
     password: req.body.password
   };
-  this.mUser.login(option, function (err, result) {
-    Controller.sendResponse(err, result, response);
+  let mUser = new User();
+  mUser.login(options, function (err, result) {
+    Controller.sendResponse(err, result, res);
   });
 };
 
